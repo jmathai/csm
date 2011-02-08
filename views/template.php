@@ -10,7 +10,7 @@
       <img src="<?php echo img('/img/logo.png'); ?>">
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li class="active"><a href="/">Home</a></li>
           <li><a href="/">Updates</a></li>
           <li><a href="/">Get Involved</a></li>
           <li><a href="/">About</a></li>
@@ -18,22 +18,19 @@
       </nav>
     </header>
   </div>
-  <div class="container">
-    <div class="top border"></div>
-  </div>
+  <div class="top border"></div>
   <div class="content-outer">
     <div class="container" id="content">
-      <div id="content-body">
-        <?php include $body; ?>
-      </div>
+      <?php include $body; ?>
     </div>
   </div>
-  <div class="container">
-    <div class="bottom border"></div>
-  </div>
-  <div class="container">
+  <div class="bottom border"></div>
+  <div class="footer">
     <footer>
-      Christhia Seva Mission, &copy; <?php echo date('Y'); ?>
+      <div class="container">
+        <img src="<?php echo img('/img/india-footer.png'); ?>">
+        <span>Christhia Seva Mission, &copy; <?php echo date('Y'); ?></span>
+      </div>
     </footer>
   </div>
 </body>
