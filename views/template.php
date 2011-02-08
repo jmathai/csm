@@ -19,7 +19,17 @@
     </header>
   </div>
   <div class="container">
-    <?php include $body; ?>
+    <div class="top border"></div>
+  </div>
+  <div class="content-outer">
+    <div class="container" id="content">
+      <div id="content-body">
+        <?php include $body; ?>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bottom border"></div>
   </div>
   <div class="container">
     <footer>
