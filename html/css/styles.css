@@ -1,33 +1,38 @@
 <?php
-  $backgroundImage = img('/img/background.gif');
-  $contentTopBottomImage = img('/img/background-content-top-bottom.png');
-  $outerLeftRightImage = img('/img/background-outer-left-right.png');
+  $backgroundImage = img('/img/background-rice-field.jpg');
   $backgroundFooterImage = img('/img/background-footer.png');
 ?>
-body{ margin:0; padding:0; font-family:"Trebuchet MS","Lucida Grande",georgia,serif; background:url("<?php echo $backgroundImage; ?>");}
+body{ margin:15px 0 0 0; padding:0; font-family:"Trebuchet MS","Lucida Grande",georgia,serif; background:url("<?php echo $backgroundImage; ?>") fixed center top;}
 body div.container{ width:946px; margin:auto; position:relative; }
 
-h1, h2, h3{ margin:0; padding:0; }
-h1{font-size:1.3em;}
+h1, h2, h3{ margin:0; padding:0; font-family:Georgia,'Times New Roman',Times,Serif; font-weight:normal;}
+h1{font-size:1.5em; padding-bottom:3px; margin-bottom:10px; border-bottom:dotted 1px #ccc;}
 h2{font-size:1.2em;}
-h3{font-size:1.1em;}
+h3{font-size:1em;}
+p{ display:block; }
 
-header {height:155px;}
+header {display:block; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; border-top-left-radius:10px; border-top-right-radius:10px; background-color:#e14415; border-bottom:solid 1px #ff9e21;}
 header img{ width:359px; height:149px; position:relative; }
 header ul{ list-style-type:none; margin:0; padding:0; position:absolute; left:500px; top:75px;}
 header ul li{ float:left; height:21px; margin:0 10px; padding:6px 0; -moz-border-radius:5px; border-radius:5px; font-weight:bold; }
-header ul li.active{ background-color:#e14415; }
+header ul li.active{ background-color:#ff9e21; }
 header ul li a{ color:#fff; text-decoration:none; width:100%; height:100%; padding:0 10px; }
 
-div.content-outer{ background:url("<?php echo $outerLeftRightImage; ?>") repeat-y; width:978px; margin:auto; }
-div.border{ width:978px; height:25px; background:url("<?php echo $contentTopBottomImage; ?>"); margin:auto; }
-div.border.bottom{ background-position:0 -25px; }
-
-div.footer{ margin-top:10px; height:45px; background:url("<?php echo $backgroundFooterImage; ?>") repeat-x; }
+div.footer{ margin-top:10px; height:45px; background:url("<?php echo $backgroundFooterImage; ?>") repeat-x; -moz-border-radius-topleft:10px; -moz-border-radius-topright:10px; border-top-left-radius:10px; border-top-right-radius:10px; }
 div.footer img{ position:absolute; top:0; left:0;}
 div.footer footer div.container{ text-align:right; padding:16px 0 0 0; font-size:.75em; color:#fff;}
 
-div#content{ padding:10px 25px 0; width:928px; left:1px; min-height:400px; /*font-family:georgia,serif;*/}
+div#content{ background-color:#eee; border-top:solid 1px #aaa; margin-top:5px;-moz-border-radius-bottomleft:10px; -moz-border-radius-bottomright:10px; border-bottom-left-radius:10px; border-bottom-right-radius:10px; }
+div#content>div{ padding:10px 25px 0; }
 div#content div.headline{ width:75%; position:relative; top:10px; font-style:italic; margin:auto; padding:25px; border-top:dotted 1px #ccc; border-bottom:dotted 1px #ccc; }
 div#content div.headline div.footnote{ text-align:right; text-transform:uppercase; }
 div#content p img{ -moz-border-radius:5px; border-radius:5px; margin:0 5px 5px 0; }
+div#content div.left-content{ width:510px; padding-right:25px; float:left; }
+div#content div.right-bar{ width:350px; padding:5px; float:left; -moz-border-radius:5px; border-radius:5px; background-color:#bbd94b; }
+div#content div.right-bar h2{ color:#fff; padding-bottom:2px; border-bottom:dotted 1px #ddd;}
+
+div#content div.home img.portrait{width:300px; height:219px; margin:auto; border:solid 1px #bbb; display:block; }
+
+.clearfix:after { margin-bottom:10px; content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix {display: inline-block;}
+.rounded{border-radius:5px;-moz-border-radius:5px;}

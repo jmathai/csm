@@ -10,21 +10,19 @@
       <img src="<?php echo img('/img/logo.png'); ?>">
       <nav>
         <ul>
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="/">Updates</a></li>
+          <!--<li class="active"><a href="/">Home</a></li>-->
+          <!--<li><a href="/">Updates</a></li>
           <li><a href="/">Get Involved</a></li>
-          <li><a href="/">About</a></li>
+          <li><a href="/">About</a></li>-->
         </ul>
       </nav>
     </header>
   </div>
-  <div class="top border"></div>
-  <div class="content-outer">
-    <div class="container" id="content">
+  <div class="container" id="content">
+    <div >
       <?php include $body; ?>
     </div>
   </div>
-  <div class="bottom border"></div>
   <div class="footer">
     <footer>
       <div class="container">
